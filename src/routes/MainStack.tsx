@@ -2,7 +2,8 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/home/HomeScreen';
 import Users from '../screens/users/Users';
-import Attendence from '../screens/attendence/Attendence';
+import Attendence from '../screens/attendance/Attendance';
+import Report from '../screens/report/Report';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,8 +15,12 @@ const MainStack = () => {
       component: Users,
     },
     {
-      name: 'Attendence',
+      name: 'Attendance',
       component: Attendence,
+    },
+    {
+      name: 'Report',
+      component: Report,
     },
   ];
 
